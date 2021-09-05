@@ -1,0 +1,13 @@
+<div class="filters">
+  <input nz-input placeholder="Nazwa przepisu" [formControl]="nameFilter" />
+  <nz-select nzAllowClear [nzOptions]="categories$ | async" [formControl]="categoryFilter"></nz-select>
+</div>
+<ng-container *ngIf="recipes$ | async as recipes">
+  <nz-pagination style="margin-top: 20px" [nzPageIndex]="(page | async) + 1" [nzTotal]="count$ | async"
+    nzShowSizeChanger [nzPageSizeOptions]="[6,9,12]" [nzPageSize]="pageSize | async"
+    (nzPageIndexChange)="pageChange($event)" (nzPageSizeChange)="pageSizeChange($event)">
+  </nz-pagination>
+  <div class="recipe-list">
+    <app-recipe-card *ngFor="let recipe of recipes" [recipe]="recipe"></app-recipe-card>
+  </div>
+</ng-container>

@@ -1,0 +1,68 @@
+@use "sass:list";
+@use "sass:map";
+
+$screen-lg: 1920px;
+$screen-md: 1536px;
+$screen-sm: 1366px;
+$tablet: 768px;
+$mobile: 360px;
+
+body {
+  .container-navy {
+    * {
+      --primary-color: #25283d;
+      --secondary-color: #8f3985;
+      --accent-color: #a675a1;
+      --signed-color: #cea2ac;
+      --background-color: #eff0f5;
+      --background-light-color: #fff;
+      --primary-label: #fff;
+      --accent-label: #000;
+      --background-label: #000;
+    }
+  }
+
+  .container-blue {
+    * {
+      --primary-color: #0fa3b1;
+      --secondary-color: #b5e2fa;
+      --accent-color: #f7a072;
+      --signed-color: #eddea4;
+      --background-color: #f9f7f3;
+      --background-light-color: #fff;
+      --primary-label: #fff;
+      --accent-label: #000;
+      --background-label: #000;
+    }
+  }
+
+  // .container-red {
+  //   * {
+  //     --primary-color: #000000;
+  //     --secondary-color: #ff0000;
+  //     --accent-color: #f7a072;
+  //     --signed-color: #eddea4;
+  //     --background-color: #ffe6e6;
+  //     --background-light-color: #fff;
+  //     --primary-label: #fff;
+  //     --accent-label: #000;
+  //     --background-label: #000;
+  //   }
+  // }
+}
+
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$accent-color: var(--accent-color);
+$signed-color: var(--signed-color);
+$background-color: var(--background-color);
+$primary-label: var(--primary-label);
+$accent-label: var(--accent-label);
+$background-label: var(--background-label);
+$background-light-color: var(--background-light-color);
+
+@mixin from-resolution($resolution) {
+  @media (min-width: $resolution) {
+    @content;
+  }
+}

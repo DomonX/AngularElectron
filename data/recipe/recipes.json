@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "sequence": 2,
+  "data": [
+    {
+      "id": 1,
+      "name": "Kubuś",
+      "image": "https://www.kwestiasmaku.com/sites/v123.kwestiasmaku.com/files/balwan-w-tropikach-01.jpg",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "Stek Wołowy",
+      "image": "https://ocdn.eu/pulscms-transforms/1/_07k9kqTURBXy9kMTA5YTdiMjgyMmY4MzEzYzQyMTAxNzgwNjU3N2JkMC5qcGVnk5UDAMzCzQPozQIzkwXNAxTNAbyTCaY0ZjE4OWIGgaEwAQ/jak-przygotowac-perfekcyjny-stek-z-kratka.jpg",
+      "categoryId": 2
+    },
+    {
+      "id": 3,
+      "name": "Szarlotka",
+      "image": "https://d3iamf8ydd24h9.cloudfront.net/pictures/articles/2018/07/88438-v-900x556.jpg",
+      "categoryId": 1
+    },
+    {
+      "id": 4,
+      "name": "Szarlotka",
+      "image": "https://d3iamf8ydd24h9.cloudfront.net/pictures/articles/2018/07/88438-v-900x556.jpg",
+      "categoryId": 1
+    },
+    {
+      "id": 5,
+      "name": "Szarlotka",
+      "image": "https://d3iamf8ydd24h9.cloudfront.net/pictures/articles/2018/07/88438-v-900x556.jpg",
+      "categoryId": 1
+    },
+    {
+      "id": 6,
+      "name": "Szarlotka",
+      "image": "https://d3iamf8ydd24h9.cloudfront.net/pictures/articles/2018/07/88438-v-900x556.jpg",
+      "categoryId": 1
+    },
+    {
+      "id": 7,
+      "name": "Szarlotka",
+      "image": "https://d3iamf8ydd24h9.cloudfront.net/pictures/articles/2018/07/88438-v-900x556.jpg",
+      "categoryId": 1
+    },
+    {
+      "id": 8,
+      "name": "Stek Wołowy",
+      "image": "https://ocdn.eu/pulscms-transforms/1/_07k9kqTURBXy9kMTA5YTdiMjgyMmY4MzEzYzQyMTAxNzgwNjU3N2JkMC5qcGVnk5UDAMzCzQPozQIzkwXNAxTNAbyTCaY0ZjE4OWIGgaEwAQ/jak-przygotowac-perfekcyjny-stek-z-kratka.jpg",
+      "categoryId": 2
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<nav class="menu" [ngClass]="{ hidden: !navVisible }">
+  <ul class="menu-list">
+    <li
+      class="menu-item"
+      *ngFor="let item of items"
+      [routerLink]="item.routerLink"
+    >
+      <i class="menu-item-icon" nz-icon [nzType]="item.icon" nzTheme="fill"></i
+      >&nbsp;<span class="menu-item-label">{{ item.label }}</span>
+    </li>
+  </ul>
+  <div (click)="footerClicked()" class="menu-footer">
+    <i
+      [ngClass]="{ activated: !navVisible }"
+      class="menu-footer-arrow"
+      nz-icon
+      nzType="down"
+      nzTheme="outline"
+    ></i>
+  </div>
+</nav>

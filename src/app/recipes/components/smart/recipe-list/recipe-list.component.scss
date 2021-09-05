@@ -1,0 +1,24 @@
+@import "variables.scss";
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.filters {
+  padding: 24px;
+  background: $secondary-color;
+  border-radius: 8px;
+  :not(:first-child) {
+    margin-top: 8px;
+  }
+}
+
+nz-select {
+  width: 100%;
+}
+
+app-recipe-card {
+  padding: 24px;
+}

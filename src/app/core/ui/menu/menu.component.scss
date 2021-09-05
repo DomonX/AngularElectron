@@ -1,0 +1,102 @@
+@import "variables.scss";
+
+.menu {
+  transform: translateY(0);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: $primary-color;
+  color: var(--primary-label);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transition: transform 1s cubic-bezier(0.03, 0.99, 0.44, 0.92);
+  z-index: 1;
+  &.hidden {
+    transform: translateY(calc(-100% + 50px));
+  }
+  @include from-resolution($screen-sm) {
+    transition: width 1s cubic-bezier(0.03, 0.99, 0.44, 0.92);
+    position: sticky;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    border-radius: 0;
+    &.hidden {
+      transform: translateY(0);
+      width: 80px;
+    }
+  }
+}
+
+.menu-list {
+  padding: 12px 0;
+  margin: 0;
+  list-style: none;
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+}
+
+.menu-item {
+  height: 24px;
+  padding: 0 24px;
+  margin: 16px 0;
+  transition: background-color 1s cubic-bezier(0.03, 0.99, 0.44, 0.92);
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+
+  @include from-resolution($screen-sm) {
+    justify-content: flex-start;
+  }
+
+  .hidden & {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+  }
+
+  &:hover {
+    background-color: rgba($background-color, 0.2);
+  }
+}
+
+.menu-item-label {
+  .hidden & {
+    display: none;
+  }
+}
+
+.menu-footer {
+  width: 100%;
+  height: 50px;
+  background: $secondary-color;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include from-resolution($screen-sm) {
+    border-radius: 0;
+  }
+}
+
+.menu-footer-arrow {
+  font-size: 24px;
+  color: $primary-label;
+  transform: rotate(180deg);
+  transition: transform 0.5s cubic-bezier(0.03, 0.99, 0.44, 0.92);
+  @include from-resolution($screen-sm) {
+    transform: rotate(90deg);
+  }
+}
+
+.menu-footer-arrow.activated {
+  transform: rotate(0deg);
+  @include from-resolution($screen-sm) {
+    transform: rotate(270deg);
+  }
+}

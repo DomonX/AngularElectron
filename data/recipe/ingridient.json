@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "sequence": 1,
+  "data": [
+    {
+      "id": 1,
+      "recipeId": 3,
+      "name": "jabłek (na szarlotkę najlepiej twardych i kwaśnych, np. szara reneta)",
+      "amount": "1,5 kg"
+    },
+    { "id": 2, "recipeId": 3, "name": "łyżek cukru", "amount": "5" },
+    { "id": 3, "recipeId": 3, "name": "łyżeczki cynamonu", "amount": "1/2" }
+  ]
+}

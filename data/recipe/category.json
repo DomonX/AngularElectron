@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "sequence": 3,
+  "data": [
+    { "id": 1, "name": "Ciasta" },
+    { "id": 2, "name": "Obiady" }
+  ]
+}
